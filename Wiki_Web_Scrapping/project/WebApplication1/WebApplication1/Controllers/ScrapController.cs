@@ -39,9 +39,10 @@ namespace WebApplication1.Controllers
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load(url);
 
-            var HeaderNames = doc.DocumentNode.SelectNodes("//div[@class='vector-toc-text']");
+            var HeaderNames = doc.DocumentNode.SelectNodes("//div[@class='vector-toc-text']/text()");
 
             var titles = new List<OutputModel>();
+
             foreach (var item in HeaderNames)
             {
                 titles.Add(new OutputModel { OutputData = item.InnerText.Trim() });

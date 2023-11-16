@@ -7,8 +7,11 @@
 
 
 <ul>
-    @foreach (var item in Model)
+    @foreach (var item in Model.Skip(1))
     {
-        <li>@item.OutputData</li>
+        if (item.OutputData != "")
+        {
+            <li>@item.OutputData</li>
+        }   
     }
 </ul>

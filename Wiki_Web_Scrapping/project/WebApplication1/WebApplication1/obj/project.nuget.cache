@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+eouVFn1FxnWZGp6YRAUKFeoXksb6XrkkOHFtkSzb20X3ogqV4jLGNEok5Kx1GpwO7OEvG2BLRIQQ7uFR7tmFw==",
+  "dgSpecHash": "O2dZAs7Zp5G+TKJsZ1PG1jzwemAeq8aWYLvOMrLUFuePmNGmyiKkcNxlS56gxOmDrqpoklqfrzqhNKRIanRynA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Desktop\\dot NET Workbench\\MerkaUSA_web_Scrapping_project\\2\\project\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\hp\\OneDrive\\Desktop\\dot NET Workbench\\PracticeProjects\\Wiki_Web_Scrapping\\project\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512"
   ],
