@@ -1,0 +1,14 @@
+﻿@model List<OutputModel>
+
+@{
+}
+
+<h3> The Topics of this pages are as follows: </h3>
+
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.OutputData</li>
+    }
+</ul>
