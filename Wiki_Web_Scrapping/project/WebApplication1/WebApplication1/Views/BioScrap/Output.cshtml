@@ -1,0 +1,83 @@
+﻿@model BioOutputModel
+
+@{
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bio Data</title>
+</head>
+<body>
+    <h3> Data from info-box is as follow: </h3>
+
+    @if (Model != null)
+    {
+        @if (!string.IsNullOrEmpty(Model?.Name))
+        {
+            <p><strong>Name:</strong> @Model.Name</p>
+        }
+
+        @if (!string.IsNullOrEmpty(Model?.Born))
+        {
+            <p><strong>Born:</strong> @Model.Born</p>
+        }
+
+        @if (!string.IsNullOrEmpty(Model?.AlmaMatter))
+        {
+            <p><strong>Alma Matter:</strong> @Model.AlmaMatter</p>
+        }
+
+@*         @if (!string.IsNullOrEmpty(Model?.Occupation))
+        {
+            <p><strong>Occupation:</strong> @Model.Occupation</p>
+        } *@
+
+        @if (Model.Occupations != null && Model.Occupations.Any())
+        {
+            <p>
+                <strong>Occupation:</strong>
+                <ul>
+                    @foreach (var occupation in Model.Occupations)
+                    {
+                        <li>@occupation</li>
+                    }
+                </ul>
+            </p>
+        }
+
+
+        @if (!string.IsNullOrEmpty(Model?.ChildrenCount))
+        {
+            <p><strong>Children:</strong> @Model.ChildrenCount</p>
+        }
+
+        @if (!string.IsNullOrEmpty(Model?.Spouse))
+        {
+            <p><strong>Spouse:</strong> @Model.Spouse</p>
+        }
+
+        @if (!string.IsNullOrEmpty(Model?.Parents))
+        {
+            <p><strong>Parents:</strong> @Model.Parents</p>
+        }
+
+        @if (!string.IsNullOrEmpty(Model?.Family))
+        {
+            <p><strong>Family:</strong> @Model.Family</p>
+        }
+
+    }
+    else
+    {
+        <p>No data available.</p>
+    }
+
+
+
+
+</body>
+</html>

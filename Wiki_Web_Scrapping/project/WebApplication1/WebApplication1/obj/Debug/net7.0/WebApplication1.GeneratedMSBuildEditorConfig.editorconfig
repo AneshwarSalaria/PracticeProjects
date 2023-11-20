@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hp\OneDrive\Desktop\dot NET Workbench\PracticeProjects\Wiki_Web_Scrapping\project\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/hp/OneDrive/Desktop/dot NET Workbench/PracticeProjects/Wiki_Web_Scrapping/project/WebApplication1/WebApplication1/Views/BioScrap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlvU2NyYXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/dot NET Workbench/PracticeProjects/Wiki_Web_Scrapping/project/WebApplication1/WebApplication1/Views/BioScrap/Output.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlvU2NyYXBcT3V0cHV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/OneDrive/Desktop/dot NET Workbench/PracticeProjects/Wiki_Web_Scrapping/project/WebApplication1/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
