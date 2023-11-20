@@ -31,10 +31,6 @@
             <p><strong>Alma Matter:</strong> @Model.AlmaMatter</p>
         }
 
-        @if (!string.IsNullOrEmpty(Model?.SingleOccupation))
-        {
-            <p><strong>Occupation:</strong> @Model.SingleOccupation</p>
-        }
 
         @if (Model.Occupations != null && Model.Occupations.Any())
         {
@@ -48,6 +44,13 @@
                 </ul>
             </p>
         }
+        
+        else if (!string.IsNullOrEmpty(Model?.SingleOccupation))
+        {
+            <p><strong>Occupation:</strong> @Model.SingleOccupation</p>
+        }
+
+
 
 
         @if (!string.IsNullOrEmpty(Model?.ChildrenCount))
