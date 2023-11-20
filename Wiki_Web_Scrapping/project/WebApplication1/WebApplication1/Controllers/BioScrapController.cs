@@ -43,7 +43,7 @@ namespace WebApplication1.Controllers
             //}
             //return View(titles);
             
-            //string occupation = string.Empty;
+            string singleOccupation = string.Empty;
 
 
             string name = string.Empty;
@@ -65,12 +65,12 @@ namespace WebApplication1.Controllers
                 divNode = null;
             }
 
-            //divNode = doc.DocumentNode.SelectSingleNode("//td[@class='infobox-data role']");
-            //if (divNode != null)
-            //{
-            //    occupation = divNode.InnerText.Trim();
-            //    divNode = null;
-            //}
+            divNode = doc.DocumentNode.SelectSingleNode("//td[@class='infobox-data role']");
+            if (divNode != null)
+            {
+                singleOccupation = divNode.InnerText.Trim();
+                divNode = null;
+            }
 
             var labelNodes = doc.DocumentNode.SelectNodes("//th[@class='infobox-label']");
 
@@ -140,6 +140,7 @@ namespace WebApplication1.Controllers
                 Name = name,
                 Born = born,
                 AlmaMatter = almaMater,
+                SingleOccupation = singleOccupation,
                 Occupations = new List<string>(),
                 ChildrenCount = children,
                 Spouse = spouse,

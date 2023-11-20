@@ -8,7 +8,7 @@
 
         public string? AlmaMatter { get; set; }
 
-        //public string? Occupation { get; set; }
+        public string? SingleOccupation { get; set; }
         public List<String>? Occupations{ get; set; }
         
         //public int? ChildrenCount { get; set; }

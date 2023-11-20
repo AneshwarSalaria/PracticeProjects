@@ -31,10 +31,10 @@
             <p><strong>Alma Matter:</strong> @Model.AlmaMatter</p>
         }
 
-@*         @if (!string.IsNullOrEmpty(Model?.Occupation))
+        @if (!string.IsNullOrEmpty(Model?.SingleOccupation))
         {
-            <p><strong>Occupation:</strong> @Model.Occupation</p>
-        } *@
+            <p><strong>Occupation:</strong> @Model.SingleOccupation</p>
+        }
 
         @if (Model.Occupations != null && Model.Occupations.Any())
         {
